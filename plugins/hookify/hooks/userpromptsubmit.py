@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """UserPromptSubmit hook executor for hookify plugin.
 
-This script is called by Claude Code when user submits a prompt.
-It reads .claude/hookify.*.local.md files and evaluates rules.
+This script is called by Quilloom when user submits a prompt.
+It reads .quilloom/hookify.*.local.md files and evaluates rules.
 """
 
 import os

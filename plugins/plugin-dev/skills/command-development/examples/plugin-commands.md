@@ -1,6 +1,6 @@
 # Plugin Command Examples
 
-Practical examples of commands designed for Claude Code plugins, demonstrating plugin-specific patterns and features.
+Practical examples of commands designed for Quilloom plugins, demonstrating plugin-specific patterns and features.
 
 ## Table of Contents
 
@@ -487,7 +487,7 @@ Use for: Verifying required plugin files exist
 1. **Test with plugin installed:**
    ```bash
    cd /path/to/plugin
-   claude /command-name args
+   quilloom /command-name args
    ```
 
 2. **Verify ${CLAUDE_PLUGIN_ROOT} expansion:**
@@ -498,8 +498,8 @@ Use for: Verifying required plugin files exist
 
 3. **Test across different working directories:**
    ```bash
-   cd /tmp && claude /command-name
-   cd /other/project && claude /command-name
+   cd /tmp && quilloom /command-name
+   cd /other/project && quilloom /command-name
    ```
 
 4. **Validate resource availability:**
@@ -545,7 +545,7 @@ Use for: Verifying required plugin files exist
 4. **Hardcoding plugin paths:**
    ```markdown
    # Wrong - breaks on different installations
-   @/home/user/.claude/plugins/my-plugin/config.json
+   @/home/user/.quilloom/plugins/my-plugin/config.json
 
    # Correct - works everywhere
    @${CLAUDE_PLUGIN_ROOT}/config.json

@@ -141,7 +141,7 @@ This plugin bundles 6 expert review agents that each focus on a specific aspect 
 
 ### Individual Agent Usage
 
-Simply ask questions that match an agent's focus area, and Claude will automatically trigger the appropriate agent:
+Simply ask questions that match an agent's focus area, and Quilloom will automatically trigger the appropriate agent:
 
 ```
 "Can you check if the tests cover all edge cases?"
@@ -171,7 +171,7 @@ This will trigger all relevant agents to analyze different aspects of your PR.
 
 ### Proactive Review
 
-Claude may proactively use these agents based on context:
+Quilloom may proactively use these agents based on context:
 
 - **After writing code** → code-reviewer
 - **After adding docs** → comment-analyzer
@@ -297,8 +297,8 @@ This plugin works great with:
 ## Contributing
 
 Found issues or have suggestions? These agents are maintained in:
-- User agents: `~/.claude/agents/`
-- Project agents: `.claude/agents/` in claude-cli-internal
+- User agents: `~/.quilloom/agents/`
+- Project agents: `.quilloom/agents/` in quilloom-cli-internal
 
 ## License
 

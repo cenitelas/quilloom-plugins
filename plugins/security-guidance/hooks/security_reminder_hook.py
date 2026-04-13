@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Security Reminder Hook for Claude Code
+Security Reminder Hook for Quilloom
 This hook checks for security patterns in file edits and warns about potential vulnerabilities.
 """
 
@@ -128,13 +128,13 @@ Only use exec() if you absolutely need shell features and the input is guarantee
 
 def get_state_file(session_id):
     """Get session-specific state file path."""
-    return os.path.expanduser(f"~/.claude/security_warnings_state_{session_id}.json")
+    return os.path.expanduser(f"~/.quilloom/security_warnings_state_{session_id}.json")
 
 
 def cleanup_old_state_files():
     """Remove state files older than 30 days."""
     try:
-        state_dir = os.path.expanduser("~/.claude")
+        state_dir = os.path.expanduser("~/.quilloom")
         if not os.path.exists(state_dir):
             return
 

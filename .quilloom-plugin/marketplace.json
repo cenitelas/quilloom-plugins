@@ -7,19 +7,8 @@
   "plugins": [
     {
       "name": "agent-sdk-dev",
-      "description": "Development kit for working with the Claude Agent SDK",
+      "description": "Development kit for working with the Quilloom Agent SDK",
       "source": "./plugins/agent-sdk-dev",
-      "category": "development"
-    },
-    {
-      "name": "claude-opus-4-5-migration",
-      "description": "Migrate your code and prompts from Sonnet 4.x and Opus 4.1 to Opus 4.5.",
-      "version": "1.0.0",
-      "author": {
-        "name": "William Hu",
-        "email": "whu@anthropic.com"
-      },
-      "source": "./plugins/claude-opus-4-5-migration",
       "category": "development"
     },
     {
@@ -101,7 +90,7 @@
     },
     {
       "name": "plugin-dev",
-      "description": "Comprehensive toolkit for developing Claude Code plugins. Includes 7 expert skills covering hooks, MCP integration, commands, agents, and best practices. AI-assisted plugin creation and validation.",
+      "description": "Comprehensive toolkit for developing Quilloom plugins. Includes 7 expert skills covering hooks, MCP integration, commands, agents, and best practices. AI-assisted plugin creation and validation.",
       "version": "0.1.0",
       "author": {
         "name": "Daisy Hollman",
@@ -123,7 +112,7 @@
     },
     {
       "name": "ralph-wiggum",
-      "description": "Interactive self-referential AI loops for iterative development. Claude works on the same task repeatedly, seeing its previous work, until completion.",
+      "description": "Interactive self-referential AI loops for iterative development. Quilloom works on the same task repeatedly, seeing its previous work, until completion.",
       "version": "1.0.0",
       "author": {
         "name": "Daisy Hollman",
@@ -146,6 +135,6 @@
   ],
   "metadata": {
     "version": "1.0.0",
-    "description": "Plugins for Quilloom (based on Claude Code plugins)"
+    "description": "Plugins for Quilloom (based on Quilloom plugins)"
   }
 }

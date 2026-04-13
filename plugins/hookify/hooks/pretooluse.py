@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """PreToolUse hook executor for hookify plugin.
 
-This script is called by Claude Code before any tool executes.
-It reads .claude/hookify.*.local.md files and evaluates rules.
+This script is called by Quilloom before any tool executes.
+It reads .quilloom/hookify.*.local.md files and evaluates rules.
 """
 
 import os

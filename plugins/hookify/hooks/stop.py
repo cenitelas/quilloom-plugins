@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Stop hook executor for hookify plugin.
 
-This script is called by Claude Code when agent wants to stop.
-It reads .claude/hookify.*.local.md files and evaluates stop rules.
+This script is called by Quilloom when agent wants to stop.
+It reads .quilloom/hookify.*.local.md files and evaluates stop rules.
 """
 
 import os

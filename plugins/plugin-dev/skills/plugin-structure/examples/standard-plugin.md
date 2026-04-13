@@ -6,7 +6,7 @@ A well-structured plugin with commands, agents, and skills.
 
 ```
 code-quality/
-├── .claude-plugin/
+├── .quilloom-plugin/
 │   └── plugin.json
 ├── commands/
 │   ├── lint.md
@@ -36,7 +36,7 @@ code-quality/
 
 ## File Contents
 
-### .claude-plugin/plugin.json
+### .quilloom-plugin/plugin.json
 
 ```json
 {
@@ -508,7 +508,7 @@ exit 0
 ### Running Commands
 
 ```
-$ claude
+$ quilloom
 > /lint
 Running linter checks...
 

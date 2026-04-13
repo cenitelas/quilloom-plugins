@@ -1,14 +1,14 @@
 ---
 name: Command Development
-description: This skill should be used when the user asks to "create a slash command", "add a command", "write a custom command", "define command arguments", "use command frontmatter", "organize commands", "create command with file references", "interactive command", "use AskUserQuestion in command", or needs guidance on slash command structure, YAML frontmatter fields, dynamic arguments, bash execution in commands, user interaction patterns, or command development best practices for Claude Code.
+description: This skill should be used when the user asks to "create a slash command", "add a command", "write a custom command", "define command arguments", "use command frontmatter", "organize commands", "create command with file references", "interactive command", "use AskUserQuestion in command", or needs guidance on slash command structure, YAML frontmatter fields, dynamic arguments, bash execution in commands, user interaction patterns, or command development best practices for Quilloom.
 version: 0.2.0
 ---
 
-# Command Development for Claude Code
+# Command Development for Quilloom
 
 ## Overview
 
-Slash commands are frequently-used prompts defined as Markdown files that Claude executes during interactive sessions. Understanding command structure, frontmatter options, and dynamic features enables creating powerful, reusable workflows.
+Slash commands are frequently-used prompts defined as Markdown files that Quilloom executes during interactive sessions. Understanding command structure, frontmatter options, and dynamic features enables creating powerful, reusable workflows.
 
 **Key concepts:**
 - Markdown file format for commands
@@ -21,19 +21,19 @@ Slash commands are frequently-used prompts defined as Markdown files that Claude
 
 ### What is a Slash Command?
 
-A slash command is a Markdown file containing a prompt that Claude executes when invoked. Commands provide:
+A slash command is a Markdown file containing a prompt that Quilloom executes when invoked. Commands provide:
 - **Reusability**: Define once, use repeatedly
 - **Consistency**: Standardize common workflows
 - **Sharing**: Distribute across team or projects
 - **Efficiency**: Quick access to complex prompts
 
-### Critical: Commands are Instructions FOR Claude
+### Critical: Commands are Instructions FOR Quilloom
 
 **Commands are written for agent consumption, not human consumption.**
 
-When a user invokes `/command-name`, the command content becomes Claude's instructions. Write commands as directives TO Claude about what to do, not as messages TO the user.
+When a user invokes `/command-name`, the command content becomes Quilloom's instructions. Write commands as directives TO Quilloom about what to do, not as messages TO the user.
 
-**Correct approach (instructions for Claude):**
+**Correct approach (instructions for Quilloom):**
 ```markdown
 Review this code for security vulnerabilities including:
 - SQL injection
@@ -49,18 +49,18 @@ This command will review your code for security issues.
 You'll receive a report with vulnerability details.
 ```
 
-The first example tells Claude what to do. The second tells the user what will happen but doesn't instruct Claude. Always use the first approach.
+The first example tells Quilloom what to do. The second tells the user what will happen but doesn't instruct Quilloom. Always use the first approach.
 
 ### Command Locations
 
 **Project commands** (shared with team):
-- Location: `.claude/commands/`
+- Location: `.quilloom/commands/`
 - Scope: Available in specific project
 - Label: Shown as "(project)" in `/help`
 - Use for: Team workflows, project-specific tasks
 
 **Personal commands** (available everywhere):
-- Location: `~/.claude/commands/`
+- Location: `~/.quilloom/commands/`
 - Scope: Available in all projects
 - Label: Shown as "(user)" in `/help`
 - Use for: Personal workflows, cross-project utilities
@@ -78,7 +78,7 @@ The first example tells Claude what to do. The second tells the user what will h
 Commands are Markdown files with `.md` extension:
 
 ```
-.claude/commands/
+.quilloom/commands/
 ├── review.md           # /review command
 ├── test.md             # /test command
 └── deploy.md           # /deploy command
@@ -285,7 +285,7 @@ Review @$1 for:
 > /review-file src/api/users.ts
 ```
 
-**Effect:** Claude reads `src/api/users.ts` before processing command
+**Effect:** Quilloom reads `src/api/users.ts` before processing command
 
 ### Multiple File References
 
@@ -315,7 +315,7 @@ Ensure:
 
 ## Bash Execution in Commands
 
-Commands can execute bash commands inline to dynamically gather context before Claude processes the command. This is useful for including repository state, environment information, or project-specific context.
+Commands can execute bash commands inline to dynamically gather context before Quilloom processes the command. This is useful for including repository state, environment information, or project-specific context.
 
 **When to use:**
 - Include dynamic context (git status, environment vars, etc.)
@@ -332,7 +332,7 @@ For complete syntax, examples, and best practices, see `references/plugin-featur
 Simple organization for small command sets:
 
 ```
-.claude/commands/
+.quilloom/commands/
 ├── build.md
 ├── test.md
 ├── deploy.md
@@ -347,7 +347,7 @@ Simple organization for small command sets:
 Organize commands in subdirectories:
 
 ```
-.claude/commands/
+.quilloom/commands/
 ├── ci/
 │   ├── build.md        # /build (project:ci)
 │   ├── test.md         # /test (project:ci)
@@ -505,7 +505,7 @@ PR #$1 Workflow:
 - Check file is in correct directory
 - Verify `.md` extension present
 - Ensure valid Markdown format
-- Restart Claude Code
+- Restart Quilloom
 
 **Arguments not working:**
 - Verify `$1`, `$2` syntax correct
@@ -673,7 +673,7 @@ Agent uses plugin resources:
 
 **Key points:**
 - Agent must exist in `plugin/agents/` directory
-- Claude uses Task tool to launch agent
+- Quilloom uses Task tool to launch agent
 - Document agent capabilities
 - Reference plugin resources agent uses
 
@@ -710,7 +710,7 @@ Design commands that work with plugin hooks:
 - Commands can prepare state for hooks to process
 - Hooks execute automatically on tool events
 - Commands should document expected hook behavior
-- Guide Claude on interpreting hook output
+- Guide Quilloom on interpreting hook output
 
 See `references/plugin-features-reference.md` for examples of commands that coordinate with hooks
 

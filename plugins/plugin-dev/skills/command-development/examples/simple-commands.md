@@ -2,11 +2,11 @@
 
 Basic slash command patterns for common use cases.
 
-**Important:** All examples below are written as instructions FOR Claude (agent consumption), not messages TO users. Commands tell Claude what to do, not tell users what will happen.
+**Important:** All examples below are written as instructions FOR Quilloom (agent consumption), not messages TO users. Commands tell Quilloom what to do, not tell users what will happen.
 
 ## Example 1: Code Review Command
 
-**File:** `.claude/commands/review.md`
+**File:** `.quilloom/commands/review.md`
 
 ```markdown
 ---
@@ -43,7 +43,7 @@ Provide specific feedback with file and line references.
 
 ## Example 2: Security Review Command
 
-**File:** `.claude/commands/security-review.md`
+**File:** `.quilloom/commands/security-review.md`
 
 ```markdown
 ---
@@ -86,7 +86,7 @@ Prioritize issues by severity.
 
 ## Example 3: Test Command with File Argument
 
-**File:** `.claude/commands/test-file.md`
+**File:** `.quilloom/commands/test-file.md`
 
 ```markdown
 ---
@@ -117,7 +117,7 @@ If failures found, suggest fixes based on error messages.
 
 ## Example 4: Documentation Generator
 
-**File:** `.claude/commands/document.md`
+**File:** `.quilloom/commands/document.md`
 
 ```markdown
 ---
@@ -162,7 +162,7 @@ Format as Markdown suitable for project documentation.
 
 ## Example 5: Git Status Summary
 
-**File:** `.claude/commands/git-status.md`
+**File:** `.quilloom/commands/git-status.md`
 
 ```markdown
 ---
@@ -195,7 +195,7 @@ Provide:
 
 ## Example 6: Deployment Command
 
-**File:** `.claude/commands/deploy.md`
+**File:** `.quilloom/commands/deploy.md`
 
 ```markdown
 ---
@@ -233,7 +233,7 @@ Proceed with deployment? (yes/no)
 
 ## Example 7: Comparison Command
 
-**File:** `.claude/commands/compare-files.md`
+**File:** `.quilloom/commands/compare-files.md`
 
 ```markdown
 ---
@@ -278,7 +278,7 @@ Present as structured comparison report.
 
 ## Example 8: Quick Fix Command
 
-**File:** `.claude/commands/quick-fix.md`
+**File:** `.quilloom/commands/quick-fix.md`
 
 ```markdown
 ---
@@ -314,7 +314,7 @@ Provide code changes with file paths and line numbers.
 
 ## Example 9: Research Command
 
-**File:** `.claude/commands/research.md`
+**File:** `.quilloom/commands/research.md`
 
 ```markdown
 ---
@@ -359,7 +359,7 @@ Provide actionable guidance based on research.
 
 ## Example 10: Explain Code Command
 
-**File:** `.claude/commands/explain.md`
+**File:** `.quilloom/commands/explain.md`
 
 ```markdown
 ---

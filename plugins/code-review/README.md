@@ -40,7 +40,7 @@ Performs automated code review on a pull request using multiple specialized agen
 # Post review as PR comment:
 /code-review --comment
 
-# Claude will:
+# Quilloom will:
 # - Launch 4 review agents in parallel
 # - Score each issue for confidence
 # - Output issues ≥80 confidence (to terminal or PR depending on flag)
@@ -92,7 +92,7 @@ https://github.com/owner/repo/blob/abc123.../src/utils.ts#L23-L28
 
 ## Installation
 
-This plugin is included in the Claude Code repository. The command is automatically available when using Claude Code.
+This plugin is included in the Quilloom repository. The command is automatically available when using Quilloom.
 
 ## Best Practices
 

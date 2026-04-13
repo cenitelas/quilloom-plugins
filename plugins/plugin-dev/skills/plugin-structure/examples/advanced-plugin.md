@@ -6,7 +6,7 @@ A complex, enterprise-grade plugin with MCP integration and advanced organizatio
 
 ```
 enterprise-devops/
-├── .claude-plugin/
+├── .quilloom-plugin/
 │   └── plugin.json
 ├── commands/
 │   ├── ci/
@@ -100,7 +100,7 @@ enterprise-devops/
 
 ## File Contents
 
-### .claude-plugin/plugin.json
+### .quilloom-plugin/plugin.json
 
 ```json
 {
