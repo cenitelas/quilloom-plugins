@@ -1,7 +1,5 @@
 {
   "name": "quilloom-plugins-official",
-  "version": "1.0.0",
-  "description": "Plugins for Quilloom (based on Claude Code plugins)",
   "owner": {
     "name": "Quilloom",
     "url": "https://github.com/cenitelas/quilloom-plugins"
@@ -145,5 +143,9 @@
       "source": "./plugins/security-guidance",
       "category": "security"
     }
-  ]
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Plugins for Quilloom (based on Claude Code plugins)"
+  }
 }
