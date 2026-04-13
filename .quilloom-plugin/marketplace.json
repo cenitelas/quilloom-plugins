@@ -1,0 +1,12 @@
+{
+  "name": "quilloom-plugins-official",
+  "owner": {
+    "name": "Quilloom",
+    "url": "https://github.com/cenitelas/quilloom-plugins"
+  },
+  "metadata": {
+    "version": "0.1.0",
+    "description": "Official Quilloom plugins marketplace"
+  },
+  "plugins": []
+}
