@@ -1,0 +1,15 @@
+{
+  "name": "document-skills",
+  "description": "Read, parse, and generate documents — PDF, Word (DOCX), Excel (XLSX), and PowerPoint (PPTX). Extracts text client-side so text-only coding models can work with documents.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Quilloom",
+    "url": "https://quilloom.com"
+  },
+  "skills": [
+    "./skills/xlsx",
+    "./skills/docx",
+    "./skills/pptx",
+    "./skills/pdf"
+  ]
+}

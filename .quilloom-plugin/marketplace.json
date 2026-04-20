@@ -6,6 +6,23 @@
   },
   "plugins": [
     {
+      "name": "document-skills",
+      "description": "Read and generate PDF, Word (DOCX), Excel (XLSX), and PowerPoint (PPTX) documents. Client-side parsing so text-only models can work with binary files.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Quilloom",
+        "url": "https://quilloom.com"
+      },
+      "source": "./plugins/document-skills",
+      "category": "productivity",
+      "skills": [
+        "./skills/xlsx",
+        "./skills/docx",
+        "./skills/pptx",
+        "./skills/pdf"
+      ]
+    },
+    {
       "name": "agent-sdk-dev",
       "description": "Development kit for working with the Quilloom Agent SDK",
       "source": "./plugins/agent-sdk-dev",
